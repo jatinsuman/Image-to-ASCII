@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 
-nonrgbim = Image.open("testpic3.jpg", "r")
+nonrgbim = Image.open("testpic1.jpg", "r")
 im = nonrgbim.convert("RGB")
 
 im_width, im_height = im.size
@@ -36,7 +36,6 @@ ascii_image = Image.new(mode="RGB", size=(int(new_width), int(new_height)))
 draw = ImageDraw.Draw(ascii_image)
 
 font = ImageFont.truetype("OpenSans-Regular.ttf", 6)
-
 
 for x_pos in range(0, int(new_width), 6):
     for y_pos in range(0, int(new_height), 6):
