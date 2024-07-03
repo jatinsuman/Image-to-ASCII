@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont, ImageEnhance
 
-nonrgbim = Image.open("testpic1.jpg", "r")
+nonrgbim = Image.open("testpic.jpg", "r")
 im = nonrgbim.convert("RGB")
 
 im_width, im_height = im.size
