@@ -5,7 +5,7 @@ im = nonrgbim.convert("RGB")
 
 im_width, im_height = im.size
 
-new_width, new_height = int(im_width) * (1200 // max(im.size)), int(im_height) * (1200 // max(im.size))
+new_width, new_height = int(im_width) * (1200 / max(im.size)), int(im_height) * (1200 / max(im.size))
 new_image = im.resize((int(new_width), int(new_height)))
 
 pixel_val = []
